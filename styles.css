@@ -558,45 +558,59 @@
  
 
 .d1 .des-img2{
-    background-image: url("d1.jpg");
+    background-image: url("des3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .d5 .des-img2{
-    background-image: url("d5.jpg");
+    background-image: url("des4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .d2 .des-img{
-    background-image: url("d2.jpg");
+    background-image: url("des1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .d3 .des-img{
-    background-image: url("d6.jpg");
+    background-image: url("des2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .d4 .des-img{
-    background-image: url("d4.jpg");
+    background-image: url("des5.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .d6 .des-img{
-    background-image: url("d3.jpg");
+    background-image: url("des6.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.more-des{
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+  padding-bottom: 0rem;
+}
+
+@media (max-width: 768px){
+  .more-des{
+    padding: 1rem;
+    padding-bottom: 0rem;
+  }
 }
   
   /* About Me */
