@@ -65,6 +65,10 @@
       width: 100vw;
     }
   }
+
+  a{
+    text-decoration: none;
+  }
   
 .sec-name{
   font-family: "Lexend", serif;
