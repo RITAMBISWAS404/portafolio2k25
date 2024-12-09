@@ -846,6 +846,10 @@ button:hover {
   box-shadow: 0 0 15px rgba(48, 100, 238, 0.05); /* Subtle glow effect */
 }
 
+.see-more{
+  margin-right: 0rem;
+}
+
 
 .resume-btn{
   background-color: #3064ee30;
