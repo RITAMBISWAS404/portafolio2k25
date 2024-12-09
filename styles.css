@@ -20,11 +20,12 @@
     display: flex;
     background-color: #ffffff;
     overflow-x: hidden;
+    margin-bottom: 2rem;
   }
 
   @media (max-width: 768px){
     body {
-      margin-bottom: 0rem;
+      margin-bottom: 4.5rem;
     }
   }
 
@@ -37,6 +38,92 @@
   body {
     scrollbar-width: none; /* Hide scrollbar */
     -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  }
+
+  .nav-con{
+    /* background-color: #e26138; */
+    width: 100%;
+    margin-bottom: 1.5rem;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  @media (max-width: 768px){
+    .nav-con{
+      margin-bottom: 0rem;
+      background-color: #ffffff;
+      border-top: #f0f0f0 1.25px solid;
+    }
+  }
+
+  .the-nav{
+    background-color: #ffffff;
+    border: #f0f0f0 2px solid;
+    backdrop-filter: blur(5px);
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.02), 
+              0px 3px 5px rgba(0, 0, 0, 0.01); 
+  }
+
+  @media (max-width: 768px){
+    .the-nav{
+      width: 95%;
+      border-radius: 0rem;
+      justify-content: space-around;
+      padding: 0.25rem;
+      border: none;
+    }
+  }
+
+  .the-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    background-color: #f6f7f9;
+    border: #f0f0f0 2px solid;
+    color: #444444;
+    font-family: "Lexend", serif;
+    font-size: 1rem;
+    transition: all 0.4s;
+  }
+
+  .the-item:hover{
+    background-color: #e8e8e8;
+    border: #e8e8e8 2px solid;
+    color: #161616;
+  }
+
+  @media (max-width: 768px){
+    .the-item{
+      background-color: white;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.25rem;
+      font-size: 1.25rem;
+      border: none;
+    }
+
+    .the-item:hover{
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      color: #444444;
+    }
+
+    .the-item span{
+      font-size: 0.65rem;
+      font-weight: 500;
+    }
   }
 
   
@@ -404,17 +491,8 @@
   border-radius: 2rem;
   transition: all 0.5s ease-out, opacity 1s ease-out, transform 1s ease-out;
   overflow: hidden;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Initially moved down */
   border: #f0f0f0 2px solid;
 }
-
-/* Box when it is in view (animate) */
-.design-grid .box.in-view {
-  opacity: 1; /* Fade in */
-  transform: translateY(0); /* Slide into place */
-}
-
 
 .design-grid .span-11{
     grid-column: span 1;
@@ -871,8 +949,6 @@ button:hover {
   padding-bottom: 1rem;
   border-bottom: #14353a10 2px solid;
   transition: all 0.3s ease-in-out, opacity 1s ease-out, transform 1s ease-out;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Move the card down */
   overflow: hidden;
 }
 
@@ -897,14 +973,6 @@ button:hover {
   justify-content: center;
   padding-left: 0.75rem;
   overflow: hidden;
-}
-
-
-
-/* Skill card when in view (this triggers the animation) */
-.skill-card.in-view {
-  opacity: 1; /* Fade in */
-  transform: translateY(0); /* Slide into place */
 }
 
 /* Skill logo styling */
@@ -1036,8 +1104,6 @@ button:hover {
     padding-bottom: 1rem;
     border-bottom: #14353a10 2px solid;
     transition: all 0.3s ease-in-out, opacity 1s ease-out, transform 1s ease-out;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(50px); /* Slide up from below */
     overflow: hidden;
 }
 
@@ -1046,11 +1112,6 @@ button:hover {
     padding-bottom: 0.75rem;
     border-bottom: #14353a10 1.25px solid;
   }
-}
-
-.exp-card.in-view {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Slide into position */
 }
 
 
