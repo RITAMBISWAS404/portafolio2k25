@@ -7,15 +7,128 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>send hopes</title>
-    <link rel="stylesheet" href="errorsty.css">
+    <style>
+        body {
+            font-family: "Lexend", serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 100vh;
+            width: 75vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image {
+            max-width: 35%;
+            height: auto;
+            margin: 2.5rem;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 2.5s ease; /* Fade in effect */
+        }
+
+        .text-content {
+            text-align: left;
+        }
+
+        .heading {
+            font-family: "Lexend", serif;
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            font-weight: 400;
+            color: #363737;
+        }
+
+        .subheading {
+            font-family: "Lexend", serif;
+            font-size: 1.25rem;
+            line-height: 1rem;
+            color: #aaaaaa;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            font-family: "Lexend", serif;
+            font-size: 1rem;
+            background-color: #3064ee;
+            box-shadow: 0 0 15px rgba(48, 100, 238, 0.45); /* Subtle glow effect */
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            margin-right: 0.5rem;
+            border: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #2a58d6;
+            box-shadow: 0 0 15px rgba(48, 100, 238, 0.05); /* Subtle glow effect */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .container {
+                flex-direction: column;
+                text-align: center;
+                height: 100vh;
+                width: 65vw;
+            }
+
+            .text-content {
+                text-align: center;
+            }
+
+            .image {
+                max-width: 100%;
+                margin-bottom: 0rem;
+            }
+
+            .heading {
+                font-size: 1.75rem;
+                line-height: 1.75rem;
+                text-align: center;
+                padding-top: 2rem;
+            }
+
+            .subheading {
+                font-size: 1rem;
+                padding-bottom: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <img src="404.png" alt="Example Image" class="image">
         <div class="text-content">
-            <h1 class="heading">this project is still under construction</h1>
+            <h1 class="heading" style="margin-bottom: 0px; margin-top: 0px;">this project is still under construction</h1>
             <p class="subheading">send hopes . . .</p>
+            <a href="index.html">
+                <button class="connect-btn">Go back</button>
+            </a>
         </div>
     </div>
+
+    <script>
+        // Wait for the DOM to load and then start the animation
+        document.addEventListener("DOMContentLoaded", () => {
+            // Gradually fade in the image
+            const image = document.querySelector('.image');
+            setTimeout(() => {
+                image.style.opacity = 1; // Fade in after the page is loaded
+            }, 500); // Delay before starting the fade effect
+        });
+    </script>
 </body>
 </html>
