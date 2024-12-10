@@ -1433,21 +1433,47 @@ button:hover {
   background-color: #f6f7f9;
   font-size: 1rem;
   color: #aaaaaa;
-  padding: 2rem 1rem;
   text-align: center;
   border-radius: 2rem;
   border: #f0f0f0 2px solid;
   margin-top: 1rem;
+  display: flex;
+  overflow: hidden;
 }
 
 @media (max-width: 768px){
   .the-top{
+    aspect-ratio: 2/1;
     font-size: 0.85rem;
     border-radius: 1.25rem;
     border: #f0f0f0 1.25px solid;
     margin-top: 0.75rem;
-    padding: 1.5rem;
+    background-image: url("catphone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 7rem;
   }
+}
+
+.cat-left{
+  height: 15rem;
+  aspect-ratio: 1;
+  background-image: url("catleft.png");
+  background-size: contain;
+}
+
+.cat-mid{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-right{
+  height: 15rem;
+  aspect-ratio: 1;
+  background-image: url("catright.png");
+  background-size: contain;
 }
 
 .hero-sec{
@@ -1459,6 +1485,19 @@ button:hover {
 
 
 @media (max-width: 768px){
+
+  .cat-left{
+    display: none;
+  }
+
+  .cat-mid{
+    background-color: #3063ee00;
+  }
+
+  .cat-right{
+    display: none;
+  }
+
   .hero-sec{
     height: 50vh;
     padding: 1rem;
