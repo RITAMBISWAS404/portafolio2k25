@@ -1447,12 +1447,11 @@ button:hover {
 
 @media (max-width: 768px){
   .the-top{
-    aspect-ratio: 2/1;
+    aspect-ratio: 3/1;
     font-size: 0.85rem;
     border-radius: 1.25rem;
     border: #f0f0f0 1.25px solid;
     margin-top: 0.75rem;
-    background-image: url("catphone.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1rem 7rem;
